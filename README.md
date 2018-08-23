@@ -19,16 +19,15 @@ Linux: Install docker:
 
   Explanation of the Dockerfile:
   
-  A. FROM php:7.2-apache (Pull docker image from docker hub using image name/tag php:7.2-apache).
-  
-  B. COPY php.ini /usr/local/etc/php/ (Copy updated php.ini file to /usr/local/etc/php/).
-  
-  C. COPY index.php /var/www/html/ (Copy index.php to apache docroot so phpinfo() function is displayed.
+  1. FROM php:7.2-apache (Pull docker image from docker hub using image name/tag php:7.2-apache).
+  2. COPY php.ini /usr/local/etc/php/ (Copy updated php.ini file to /usr/local/etc/php/).
+  3. COPY index.php /var/www/html/ (Copy index.php to apache docroot so phpinfo() function is displayed.
 
 ## Run the container
 1. docker run -d -p 80:80 phpinfo
-2. For additional webservers run the same command as above but change the host port to 8080, etc.
-   A. docker run -d -p 8080:80 phpinfo
+2. For additional webservers run the same command as above but change the host port to 8080, 81, etc.
+    1. docker run -d -p 8080:80 phpinfo
+    2. docker run -d -p 81:80 phpinfo
 
 ## Verifying the container and website is up:
 1. curl http://localhost on the host where you ran the container
