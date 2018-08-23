@@ -1,14 +1,13 @@
 # Docker-php-apache
 > How to Setup a PHP environment using docker apache and php
 
-As part of the docker build process we will create a phpinfo page, which we will use to verify the PHP environment settings.
-
-update php.ini to set sys_temp_dir to “/tmp/whateverfolderyouspecify”
-
-update php.ini to enable and set php error_log file
+## Getting Started
+As part of the docker build process once apache and php is installed:
+1. we will create a phpinfo page (index.php), which we will use to verify the PHP environment settings.
+2. update php.ini to set sys_temp_dir to “/tmp/whateverfolderyouspecify”
+3. update php.ini to enable and set php error_log file
 
 ## Prerequisites
-
 Linux: Install docker:
 1. yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 2. yum install docker-ce
