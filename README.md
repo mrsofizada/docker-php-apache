@@ -30,4 +30,3 @@ Linux: Install docker:
 
 ## Verifying the container and website is up:
 1. curl http://localhost on the host where you ran the container
-2. Open a browser to http://ec2-52-71-64-160.compute-1.amazonaws.com/ (this is temporary and will be removed shortly).
